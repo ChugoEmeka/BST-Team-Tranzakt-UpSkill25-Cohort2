@@ -1,0 +1,347 @@
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background-color: white;
+    font-family: arial;
+    margin: 0;
+}
+.header{
+  height: 5rem;
+  background-color: rgb(243, 241, 238);
+  box-shadow: 0 1px 2px 0 grey;
+  position: relative;
+  z-index: 1;
+}
+.nav_image{
+  position: absolute;
+	left: 16%;
+	top: 2px;
+	height: 30px;
+}
+#hamburger{
+  display: none;
+}
+.sign_in{
+  position: absolute;
+	left: 55%;
+	top: 30px;
+}
+.sign_in span a{
+  color: black;
+  font-size: 16px;
+}
+.sign_in button{
+  background-color: rgb(21, 78, 235);
+  border: none;
+  border-radius: 7px;
+  padding: 7px 18px;
+  color: white;
+  margin-left: 12px;
+  box-shadow: 0 1px 2px 0 grey;
+}
+.sign_in button a{
+  color: white;
+}
+.my_section{
+  height: 630px;
+  background-color: rgb(243, 235, 235);
+  width: 80%;
+  position: relative;
+  left: 10%;
+  top: 0px;
+}
+.upper_Section{
+  position: absolute;
+  left: 3%;
+  top: 3%;
+}
+.upper_Section i{
+  font-size: 15px;
+  font-weight: lighter;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.upper_Section span{
+  font-size: 15px;
+  vertical-align: middle;
+  color: rgb(27, 27, 27);
+  cursor: pointer;
+}
+.upper_Section p:nth-of-type(1){
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.upper_Section p:nth-of-type(2){
+  font-size: 15px;
+  color: rgb(46, 45, 45);
+  margin-top: 0;
+}
+.main_section{
+  position: absolute;
+  left: 3%;
+  top: 25%;
+  color:red;
+}
+.left_Side{
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  top: 120px;
+  position: relative;
+  left: 3%;
+  box-shadow: 0 1px 1px 0 grey;
+  padding-bottom: 20px;
+  height: 460px;
+  border-radius: 5px;
+}
+.payment_Method{
+  padding: 20px;
+  margin-left: 10px;
+  
+}
+.payment_Method h3{
+  margin-top: 0;
+  font-size: small;
+
+}
+.btn{
+  color: black;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 48.5%;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid rgb(213, 217, 224);
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 1%;
+}
+.btn:hover{
+  background-color: RoyalBlue;
+}
+.btn:active{
+  background-color: Navy;
+}
+.btn i{
+  color: black;
+  background-color: rgb(230, 230, 221);
+  float: left;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.btn span:nth-of-type(1){
+  font-weight: bold;
+  float: left;
+  margin-left: 8px;
+  font-size: 14px;
+}
+.btn span:nth-of-type(2){
+  color: rgb(65, 64, 64);
+  font-size: 12px;
+  float: left;
+  margin-left: 8px;
+}
+#btn:focus{
+  background-color: Navy;
+  color: white;
+}
+#card_Number, #Cardholder_Name{
+  width: 98.5%;
+  padding: 10px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid rgb(213, 217, 224);
+  margin-top: 7px;
+  margin-bottom: 9px;
+}
+#card_Number:hover, #Cardholder_Name:hover, #expiry_Date:hover, #cvv:hover{
+  border: 1px solid rgb(44, 44, 187);
+}
+#expiry_Date, #cvv{
+  width: 49%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid rgb(213, 217, 224);
+  margin-top: 7px;
+  margin-bottom: 0px; 
+}
+#cvv1{
+  margin-left: 38%;
+}
+label{
+  font-size: 13px;
+}
+#pay_Now{
+  width: 100%;
+  padding: 8px 0;
+  background-color: rgb(21, 78, 235);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+#pay_Now:hover{
+  background-color: RoyalBlue;
+}
+.rightSide{
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  top: 120px;
+  position: absolute;
+  left: 67%;
+  box-shadow: 0 1px 1px 0 grey;
+  padding-bottom: 20px;
+  height: 420px;
+  border-radius: 5px;
+  padding: 2px 15px;
+  font-size: 13px;
+  line-height: 22px;
+}
+#plane{
+  font-size: 20px;
+  color: rgb(21, 78, 235);
+  vertical-align: middle;
+  margin-right: 10px;
+  background-color: rgb(228, 221, 221);
+  padding: 8px;
+  border-radius: 7px;
+}
+#flight{
+  margin-left: 15%;
+}
+#myIcon{
+  font-size: 18px;
+  color: black
+  vertical-align: middle;
+  margin-right: 10px;
+}
+#rightFloat{
+  float: right;
+}
+#leftFloat{
+  float: left;
+}
+
+#note{
+  font-size: 11px;
+  background-color: rgb(235, 234, 232);
+  border-radius: 7px;
+  display: block;
+  margin-top: -18px;
+  padding: 4px;
+  text-align: center;
+}
+
+#cardInfo{
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  
+}
+/* design for tablet */
+/* For Tablet*/
+@media (min-width: 768px) and (max-width: 1120px) {
+  .my_section{
+  width: 90%;
+  left: 5%;
+  height: 1150px;
+}
+
+  .left_Side{
+  width: 94%;
+  height: auto;
+  display: block;
+  background-color: white;
+  top: 120px;
+  position: relative;
+  left: 3%;
+  box-shadow: 0 1px 1px 0 grey;
+  padding-bottom: 20px;
+  height: 460px;
+  border-radius: 5px;
+}
+
+  .rightSide{
+  background-color: white;
+  top: 650px;
+  left:5%;
+  box-shadow: 0 1px 1px 0 grey;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  padding: 2px 15px;
+  font-size: 13px;
+  line-height: 22px;
+  width: 60%;
+}
+.main_section{
+  position: absolute;
+  left: 3%;
+  top: 25%;
+  color:red;
+}
+} 
+
+/* for mobile devices*/
+@media (max-width: 767px){
+  .my_section{
+  width: 96%;
+  left: 2%;
+  height: 1200px;
+}
+
+.left_Side{
+  width: 94%;
+  height: auto;
+  display: block;
+  background-color: white;
+  top: 120px;
+  position: relative;
+  left: 2.5%;
+  box-shadow: 0 1px 1px 0 grey;
+  padding-bottom: 20px;
+  height: 600px;
+  border-radius: 3px;
+}
+.btn{
+  color: black;
+  padding: 12px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  width: 95%;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid rgb(213, 217, 224);
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 1%;
+}
+
+.rightSide{
+  background-color: white;
+  top: 750px;
+  left:2.5%;
+  box-shadow: 0 1px 1px 0 grey;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  padding: 2px 15px;
+  font-size: 13px;
+  line-height: 22px;
+  width: 95%;
+}
+
+}

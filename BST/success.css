@@ -1,0 +1,134 @@
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background-color: white;
+    font-family: arial;
+    margin: 0;
+}
+.body_section{
+  width: 100%;
+  background-color: white;
+  height: 650px;
+  top: 0px;
+  position: relative;
+}
+.card{
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 grey;
+  height: 500px;
+  position: absolute;
+}
+.circle_box{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(187, 247, 187);
+  text-align: center;
+  margin-left: 46%;
+}
+.circle_box p{
+  color: green;
+  padding-top: 8px;
+}
+.success_output{
+  text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.success_output p{
+  font-size: 16px;
+  line-height: 22px;
+}
+.booking_ref{
+  width: 100%;
+  height: 80px;
+  background-color: rgb(230, 223, 217);
+  border: 2px solid rgb(192, 188, 188);
+  border-radius: 4px;
+  color: rgb(66, 133, 187);
+}
+.booking_ref h2{
+  margin-top: -10px;
+}
+.route{
+  width: 100%;
+  height: 160px;
+  background-color: rgb(248, 246, 243);
+  border-radius: 4px;
+  color: black;
+  margin-top: 10px;
+  padding: 10px;
+  line-height: 32px;
+  font-size: 14px;
+}
+.leftside{
+  float: left;
+}
+.rightside{
+  float: right;
+}
+.myFooter{
+  margin-top: 15px;
+}
+.myFooter button:nth-child(1){
+  color: white;
+  width: 49%;
+  height: 40px;
+  background-color: rgb(44, 44, 187);
+  border-radius: 5px;
+}
+
+.myFooter button:nth-child(1):hover{
+  background-color: RoyalBlue;
+}
+#btn{
+  color: black;
+  width: 49%;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(213, 217, 224);
+}
+#btn:hover{
+  background-color: RoyalBlue;
+  color: white;
+}
+
+/* design for tablet */
+/* For Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 grey;
+  height: 500px;
+  position: absolute;
+}
+
+}
+
+/* for mobile devices*/
+@media (max-width: 767px){
+  .card{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 grey;
+  height: 500px;
+  position: absolute;
+}
+
+}

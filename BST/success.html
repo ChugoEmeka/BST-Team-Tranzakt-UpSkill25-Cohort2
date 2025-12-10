@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="success.css">
+</head>
+<body>
+  <div class="body_section">
+    <div class="card">
+      <!--success circle-->
+      <div class="circle_box">
+        <p>&#10004</p>
+      </div>
+      <!--success output-->
+      <div class="success_output">
+        <h3>Payment Successful</h3>
+        <p>Your flight has been booked successfully. We've sent the confirmation to you email</p>
+        <div class="booking_ref">
+          <p>Booking Reference</p>
+          <h2>SWO7497KRVI</h2>
+        </div>
+        <!--route details-->
+        <div class="route">
+          <span class="leftside">Route:</span><span class="rightside">Paris</span><br>
+          <span class="leftside">Date:</span><span class="rightside">Dec 15, 2025</span><br>
+          <span class="leftside">Passengers:</span><span class="rightside">1</span><br><hr>
+          <span class="leftside">Amount Paid:</span><span class="rightside">$218.90</span>
+        </div>
+        <!--footer button-->
+        <footer class="myFooter">
+        <button id="ticket">Download Ticket</button>
+        <a href="https://airline-website-tranzakt.vercel.app/"><button id="btn">Back to Home</button></a>
+        </footer>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
+<script>
+  let ticket = document.getElementById("ticket");
+  ticket.addEventListener('click' , ()=>{
+    alert("Ticket Download not available, Please Screenshot and print out")
+  });
+</script>
