@@ -1,0 +1,228 @@
+/* General Reset/Setup */
+/* Updated CSS to use Roboto */
+* {
+    box-sizing: border-box;
+    /* Use Roboto as the primary font, falling back to sans-serif */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* Light background for context */
+    margin: 0;
+}
+
+/* Auth Container Styling */
+.auth-container {
+    width: 100%;
+    max-width: 400px; /* Standard mobile/modal width */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+}
+
+/* Header (Welcome Back, Close Button) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Tab Navigation */
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 24px;
+}
+
+.tab-btn {
+    flex-grow: 1;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6c757d;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.tab-btn.active {
+    color: #4292A8; /* Primary blue color */
+    border-bottom-color: #007bff;
+    font-weight: 600;
+}
+
+/* Form Styling */
+.auth-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #495057;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    padding-right: 40px; /* Space for the eye icon */
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #4292A8;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.password-group .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    line-height: 1;
+}
+
+.password-group .toggle-password img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    opacity: 0.6;
+}
+
+/* Options (Remember Me / Forgot Password) */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.forgot-password, .no-account a {
+    color: #4292A8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Sign In Button */
+.sign-in-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #4292A8; /* Primary blue color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: #4292A8;
+}
+
+/* Separator */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 24px 0;
+    color: #6c757d;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .5em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .5em;
+}
+
+/* Social Buttons */
+.social-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #e9ecef;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* No Account Text */
+.no-account {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+/* Hide inactive form */
+.auth-form:not(.active) {
+    display: none;
+}
